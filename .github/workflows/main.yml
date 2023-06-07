@@ -11,5 +11,5 @@ jobs:
       uses: actions/checkout@v3
       
     - name: seperate 
-      uses: .github/workflows/isofun--api-ci.yml
+      uses: ./.github/workflows/isofun--api-ci.yml
     
