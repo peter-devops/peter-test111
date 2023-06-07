@@ -11,5 +11,5 @@ jobs:
     uses: ./.github/workflows/isofun--api-cd.yml
   extra-test:
     needs: deploy
-    uses: ./isofun--api-ci-extra.yml
+    uses: ./.github/workflows/dev/isofun-extra.yml
 
