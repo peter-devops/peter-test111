@@ -7,5 +7,6 @@ jobs:
   build:
     uses: ./.github/workflows/isofun--api-ci.yml
   deploy:
+    needs: build
     uses: ./.github/workflows/isofun--api-cd.yml
 
