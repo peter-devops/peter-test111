@@ -4,12 +4,5 @@ on:
     branches: [ "main" ]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/isofun--api-ci.yml
 
-    steps:
-    - name: IAMTEST
-      uses: actions/checkout@v3
-      
-    - name: seperate 
-      uses: ./.github/workflows/isofun--api-ci.yml
-    
