@@ -1,0 +1,15 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: IAMTEST
+      uses: actions/checkout@v3
+      
+    - name: seperate 
+      uses: ./.github/workflows/isofun--api-ci.yml
+    
