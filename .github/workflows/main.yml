@@ -5,4 +5,6 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/isofun--api-ci.yml
+  deploy:
+    uses: ./.github/workflows/isofun--api-cd.yml
 
