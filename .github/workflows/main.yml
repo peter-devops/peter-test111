@@ -9,4 +9,7 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/isofun--api-cd.yml
+  extra-test:
+    needs: deploy
+    uses: ./isofun--api-ci-extra.yml
 
