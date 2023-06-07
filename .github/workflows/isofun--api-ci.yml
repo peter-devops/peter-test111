@@ -1,0 +1,10 @@
+name: isofun--api-ci.yml
+on:
+  workflow_call:
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
